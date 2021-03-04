@@ -20,7 +20,6 @@ private:
 	Node *head;
 	Node *temp;
 	Node *insert;
-	Node *tail;
 	int numItems = 0;
 
 public:
@@ -78,8 +77,8 @@ public:
 				while(temp->next != NULL){
 					temp = temp->next;
 				}
-				tail = new Node(value);
-				temp->next = tail;
+				insert = new Node(value);
+				temp->next = insert;
 				numItems++;
 				return;
 			}
